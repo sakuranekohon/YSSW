@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    min-width: 15%;
+    max-width: 420px;
+    align-items: center;
+}
+
+.search>input,
+.search>button {
+    width: 85%;
+    height: 2.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    border-radius: 0.5rem;
+}
+
+.search>button {
+    background-color: #00b7ff;
+    color: rgb(232, 234, 236);
+
+}

@@ -1,0 +1,11 @@
+.topline{
+    border-top: 2px solid #a8a3a3;
+    height: 30px;
+}
+
+.topline>span{
+    color: #FFFFFF;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
