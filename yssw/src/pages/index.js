@@ -2,23 +2,32 @@ import Header from "@/components/Header";
 import Bar from "@/components/Bar";
 import Footer from "@/components/Footer";
 import style from "../../public/styles/style.module.css"
+import ScoreWin from "@/components/ScoreWin";
 
 export default function Home() {
     return (
         <>
             <Header title="HomePage" />
-            <Bar path="/"/>
+            <Bar path="/" />
             <div className={style.container}>
                 <div className={style.search}>
                     <input type="text" id="studentID" placeholder="請輸入學號" />
                     <input type="text" id="password" placeholder="請輸入密碼" />
                     <button type="button">查詢成績</button>
                 </div>
-                <div>
-                    <span>AAA</span>
+                <div className={style.allscore}>
+                    <ScoreWin title="平均成績" value="60" />
+                    <ScoreWin title="PR值" value="60" />
+                    <ScoreWin title="平均成績" value="60" />
+                    <ScoreWin title="PR值" value="60" />
+                    <ScoreWin title="平均成績" value="60" />
+                    <ScoreWin title="PR值" value="60" />
+                    <ScoreWin title="平均成績" value="60" />
+                    <ScoreWin title="PR值" value="60" />
                 </div>
-                <div>
-                    <span>BBB</span>
+                <div className={style.avePR}>
+                    <ScoreWin title="平均成績" value="60" />
+                    <ScoreWin title="PR值" value="60" />
                 </div>
             </div>
             <Footer />
