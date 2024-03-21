@@ -17,7 +17,7 @@
     width: 85%;
     height: 2.5rem;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-top: 10px;
     border-radius: 0.5rem;
     font-weight: bold;
@@ -26,6 +26,7 @@
 .search>button {
     background-color: #00b7ff;
     color: #e8eaec;
+    margin-bottom: 10px;
 }
 
 .allscore{
@@ -43,4 +44,36 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width:1024px) {
+    .allscore{
+        grid-template-columns: repeat(4,minmax(0,1fr));
+    }
+}
+
+@media (max-width:768px) {
+    .allscore{
+        grid-template-columns: repeat(3,minmax(0,1fr));
+    }
+}
+
+@media (max-width:512px) {
+    .container{
+        display: block;
+    }
+    .search{
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px #FFFFFF solid;
+    }
+    .allscore{
+        width: 100%;
+    }
+    .avePR{
+        width: 100%;
+    }
+    .allscore{
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
 }
