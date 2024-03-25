@@ -17,17 +17,10 @@ export default function Home() {
                     <button type="button" onClick={buttonClick}>查詢成績</button>
                 </div>
                 <div className={style.allscore} id="allscore">
-                    <ScoreWin title="平均成績" value="60" />
-                    <ScoreWin title="PR值" value="60" />
-                    <ScoreWin title="平均成績" value="60" />
-                    <ScoreWin title="PR值" value="60" />
-                    <ScoreWin title="平均成績" value="60" />
-                    <ScoreWin title="PR值" value="60" />
-                    <ScoreWin title="平均成績" value="60" />
-                    <ScoreWin title="PR值" value="60" />
+                    
                 </div>
                 <div className={style.avePR}>
-                    <ScoreWin title="平均成績" value="60" id="aveScore"/>
+                    <ScoreWin title="總成績" value="60" id="totalScore"/>
                     <ScoreWin title="PR值" value="60" id="prValue"/>
                 </div>
             </div>
