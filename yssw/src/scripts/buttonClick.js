@@ -1,8 +1,5 @@
 import axios from "axios";
 import ScoreWin from "@/components/ScoreWin";
-import React from "react";
-import { createPortal } from 'react-dom';
-
 
 export default function buttonClick() {
     const studentID = document.getElementById("studentID").value;
