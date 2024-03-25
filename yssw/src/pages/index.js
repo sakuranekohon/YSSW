@@ -16,7 +16,7 @@ export default function Home() {
                     <input type="text" id="password" placeholder="請輸入密碼" />
                     <button type="button" onClick={buttonClick}>查詢成績</button>
                 </div>
-                <div className={style.allscore}>
+                <div className={style.allscore} id="allscore">
                     <ScoreWin title="平均成績" value="60" />
                     <ScoreWin title="PR值" value="60" />
                     <ScoreWin title="平均成績" value="60" />
